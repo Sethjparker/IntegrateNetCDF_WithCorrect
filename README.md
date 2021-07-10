@@ -7,7 +7,7 @@ Requirements:
 - Library_template.m
 - Matlab (R2016 or higher)
 
-The "IntegrateNetCDF_WithCorrect" scrips accounts for natural abundance of stable isotopes for correction of stable-isotope tracing experiments. The current script is configured to account for incorporation of 13C atoms. If a different tracer is used (e.g., 2H, 15N), then the script must be adjusted by navigating to "function [x,M] = mscorrect(x,y)" in the *.m file and adjusting the z-value to either  "1" (for 2H) or "7" (for 15N).
+The "IntegrateNetCDF_WithCorrect" script accounts for the natural abundance of isotopes for correction of stable-isotope tracing experiments. The current script is configured to account for incorporation of 13C atoms. If a different tracer is used (e.g., 2H, 15N), then the script must be adjusted by navigating to "function [x,M] = mscorrect(x,y)" in the *.m file and adjusting the z-value to either  "1" (for 2H) or "7" (for 15N).
 
 To integrate GC-MS data, call the script and enter three commands:
 
